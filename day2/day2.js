@@ -1,4 +1,4 @@
-//ANS1
+
             /// init
             var createVariable = function(varType) {
                 this.type = null;
@@ -13,12 +13,10 @@
                     
                     case "int":
                         var newVar = new Number();
-                        // var newVar = 0;
                     break;
 
                     case "string":
                         var newVar = new String();
-                        // var newVar = "";
                     break;
 
                     case "boolean":
@@ -27,12 +25,10 @@
 
                     case "object":
                         var newVar = new Object();
-                        // var newVar = {};
                     break;
 
                     case "array":
                         var newVar = new Array();
-                        // var newVar = [];
                     break;
                 }
                 this.outPut = newVar;
@@ -73,61 +69,9 @@
 
                 return this.outPut;
             }
-
-/*----------------------------que2-------------------------------*/
-//ANS2
-
-///// three ways to create object 
-       
-       //1. -->
-       
-       var user = {fname:"mukul",lname:"medatwal",age:24 };
-       
-       
-       //2. --> 
-       
-       var user = new Object();
-       user.fname = "mukul";
-       user.lname = "mukul";
-       user.age = "mukul";
-       
-       
-       //3. -->
-       
-       function user(fname, lname, age) {
-           this.fname = fname;
-           this.lname = lname;
-           this.age = age;
-       }
-       
-       
-       var user1 = new user("mukul", "medatwal", 24);
-       var user2 = new user("shyam", "singh", 35);
-       
-       
-       
-///// ways to create array
-       
-//       1. 
-
-    var languages = new Array("JS","PHP","JAVA");
-    
-//    2.
-
-    var languages = ["JS","PHP","JAVA"];
-//    3.
-    var languages = new Array();
-    languages.push("JS");
-    
-//    4.
-    var languages = [];
-    languages[0] = "JS";
-    languages[1] = "PHP";
-    
-    
-    
-   /*----------------------------OUTPUT q1-------------------------------*/         
-     ///////////// ???????//////////       
+           
+            
+            
             // creating new number type variable
             console.log("creating new number type variable");
             var customVar = new createVariable('int');
@@ -200,6 +144,4 @@
             customVar.deleteValueInArray('Mukul');
             console.log(customVar.getOutPut());
             
-       
-       
        
