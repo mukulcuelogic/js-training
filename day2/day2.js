@@ -169,7 +169,6 @@ calculation_n.prototype.getResult = function () {
  * @param {type} name
  * @param {type} subject
  * @param {type} age
- * @returns {student}
  */
 var student = function (name, subject, age) {
 
@@ -189,7 +188,6 @@ student.prototype.getDetail = function () {
 
 /*
  * creating objects from student class
- * @type student
  */
 var student1 = new student("Mukul", "IT", 25);
 var student1_detail = student1.getDetail();  // access the function
